@@ -1,0 +1,6 @@
+.git
+.idea
+docker*
+Makefile
+Dockerfile
+README.md

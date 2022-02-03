@@ -1,8 +1,10 @@
 package common
 
 import (
+	"io/ioutil"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func StrToInt(s string) (int, error) {
@@ -16,6 +18,15 @@ func OpenFile(path string) *os.File {
 	}
 
 	return f
+}
+
+func ReadFile(path string) []string {
+	content, err := ioutil.ReadFile(path)
+	if err != nil {
+		panic(err)
+	}
+
+	return strings.Split(string(content), "\n")
 }
 
 func SliceSum(sl []int) int {

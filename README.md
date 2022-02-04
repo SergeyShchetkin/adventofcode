@@ -1,25 +1,25 @@
-Решение задач adventofcode.
+Tasks solution  advent of code.
 ---
 
-### Необходимые инструменты для запуска:
+### The necessary tools to run:
 
 1) [Docker](https://www.docker.com/)
 2) [docker-compose](https://docs.docker.com/compose/)
 3) [make](https://www.gnu.org/software/make/)
 
-### Запуск требуемой задач:
+### Run task:
 
-1) Собрать контейнер
+1) Assemble container
 
 ```bash
 $ make build
 ```
 
-2) Запустить требуемую задачу
+2) Run the required task
 
 ```bash
 $ make run-task DIR=day1 TASK=task2
 ```
 
-* DIR  - каталог с задачами
-* TASK - имя задачи
+* DIR - directory with tasks
+* TASK - task name
